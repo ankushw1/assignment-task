@@ -110,7 +110,7 @@ const Table: React.FC = () => {
         </tr>
       </thead>
       <tbody>
-        {tableData.reduce((acc, row, index) => {
+       {tableData.reduce<JSX.Element[]>((acc, row, index) => {
           const isFirstInSection =
             index === 0 || tableData[index - 1].section !== row.section;
 
