@@ -1,9 +1,13 @@
-import Image from "next/image";
+import React from 'react';
+import Layout from '../components/Layout';
+import Table from '../components/Table';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div>
-      Hello
-    </div>
+    <Layout>
+      <Table />
+    </Layout>
   );
-}
+};
+
+export default Home;
